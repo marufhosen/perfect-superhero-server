@@ -30,14 +30,6 @@ client.connect((err) => {
         res.send(docs[0]);
       });
   });
-
-  //get products by id
-  //   app.get("/product/:id", (req, res) => {
-  //     productId = new ObjectId(req.params.id);
-  //     productsCollection.find({ _id: productId }).toArray((err, documents) => {
-  //       res.send(documents[0]);
-  //     });
-  //   });
 });
 
 app.get("/", (req, res) => {
